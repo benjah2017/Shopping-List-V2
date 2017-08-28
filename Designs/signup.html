@@ -1,10 +1,76 @@
 <!DOCTYPE html>
-<html >
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="UTF-8">
-  <title>Sign Up</title>
-  </head>
-  <body>
-  <p>Hello</p>
-  </body>
-  </html>
+    <title>Shopping Cart Sign-Up</title>
+    <script>
+        function validate() {
+            var pass = document.getElementById("pass");
+            var confirmpass = document.getElementById("confirmpass");
+
+            if (pass.value !== confirmpass.value) {
+                alert('Passwords Do not Match!!');
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2 style="text-align:center;">Sign-Up</h2>
+<table style="border:1px solid; border-radius:5px 5px 5px 5px; margin:auto; width:50%; height:100%; font-family:'Palatino Linotype';" >
+    
+    <tr>
+        <td style="font-weight:bold; margin:auto">
+            Username:
+        </td>
+        <td>
+            <input type="text" name="" required="Required" id="" style="height:100%;width:60%;" autofocus="autofocus" />
+        </td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight:bold; margin:auto">
+            Email Address:
+        </td>
+        <td>
+            <input type="email" name="" id="" required="Required" style="height:100%;width:60%;" />
+        </td>
+    </tr>
+    <tr>
+        <td style="font-weight:bold; margin:auto">
+            Password:
+        </td>
+        <td>
+            <input type="password" name="pass" id="pass" required="Required" style="height:100%;width:60%;" />
+        </td>
+    </tr>
+    <tr>
+        <td style="font-weight:bold; margin:auto">
+            Confirm Password:
+        </td>
+        <td>
+            <input type="password" name="confirmpass" id="confirmpass" required="Required" style="height:100%;width:60%;" />
+        </td>
+    </tr>
+   
+    <tr>
+        
+        <td>
+            <input type="checkbox" value="check" name="check" /><strong>Accept Terms and Policies</strong> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" value="submit" name="Submit" onclick="return validate()" />
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <p style="text-align:center; font-family:'Palatino Linotype';font-weight:bold;">Already Have An Account?</p>
+            <input type="submit" value="Sign In" />
+        </td>
+    </tr>
+   
+</table>
+</body>
+</html>
