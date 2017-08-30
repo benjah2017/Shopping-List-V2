@@ -1,4 +1,4 @@
-# Versioned Directory
+# Master Directory
 
 [ ![Travis Build Status](https://travis-ci.org/benjah2017/Shopping-List-V2.svg?branch=master) ]
 
